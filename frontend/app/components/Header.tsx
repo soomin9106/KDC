@@ -41,7 +41,7 @@ const Header = () => {
                         </Link>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Link href="/" legacyBehavior passHref>
+                        <Link href="/competition" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 COMPETITION & WORKSHOP
                             </NavigationMenuLink>
