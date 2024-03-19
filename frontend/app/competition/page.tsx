@@ -1,4 +1,5 @@
 import Fee from "../components/Competition/Fee";
+import Instructors from "../components/Competition/Instructors";
 import Intro from "../components/Competition/Intro";
 import Overall from "../components/Competition/Overall";
 import Schedule from "../components/Competition/Schedule";
@@ -10,6 +11,7 @@ export default function Competition() {
             <Schedule />
             <Venue />
             <Overall />
+            <Instructors />
             <Fee />
         </div>
     );

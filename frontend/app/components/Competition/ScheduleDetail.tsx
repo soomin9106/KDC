@@ -1,6 +1,6 @@
 const ScheduleDetail = () => {
     return (
-        <div className="bg-black text-white w-[50%] rounded-[8px]">
+        <div className="bg-black text-white w-full sm:w-[50%] rounded-[8px]">
             <div className="grid grid-cols-3 gap-4 p-4">
                 <div className="col-span-1">
                     <p className="font-bold">JUNE 15</p>
