@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Welcome from "./components/Home/Introduction";
 import Schedule from "./components/Competition/Schedule";
 import Venue from "./components/Competition/Venue";
 import Overall from "./components/Competition/Overall";
