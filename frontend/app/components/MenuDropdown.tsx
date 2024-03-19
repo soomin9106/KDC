@@ -33,7 +33,7 @@ const MenuDropdown = ({ handleToggleMenu }: IDropdownMenu) => {
                         </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <Link href="/" legacyBehavior passHref>
+                        <Link href="/about" legacyBehavior passHref>
                             ABOUT
                         </Link>
                     </DropdownMenuItem>
