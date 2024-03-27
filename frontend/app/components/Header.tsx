@@ -36,7 +36,7 @@ const Header = () => {
                     <NavigationMenuItem>
                         <Link href="/about" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                ABOUT
+                                ABOUT US
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>

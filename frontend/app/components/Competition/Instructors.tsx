@@ -1,5 +1,6 @@
 import InstructorCon from "./InstructionCon"
 import InstructorBallet from "./InstructorBallet"
+import InstructorBallet2 from "./InstructorBallet2"
 
 const Instructors = () => {
     return (
@@ -9,6 +10,7 @@ const Instructors = () => {
             </div>
             <InstructorBallet />
             <InstructorCon />
+            <InstructorBallet2 />
         </div>
     )
 }
