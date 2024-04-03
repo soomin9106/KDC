@@ -10,8 +10,8 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import Link from "next/link"
-import { Button } from "@/components/ui/button";
 import MenuDropdown from "./MenuDropdown";
+import Image from "next/image";
 
 
 const Header = () => {
@@ -21,7 +21,20 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
     return (
-        <header className="w-full flex justify-end items-center fixed h-[100px] bg-accent/50 shadow-md px-10">
+        <header className="w-full flex justify-between items-center fixed h-[100px] bg-accent/50 shadow-md px-10">
+            <div>
+                <Image
+                    alt="logo"
+                    className="h-20 w-20 object-cover"
+                    height="100"
+                    src="/logo.png"
+                    style={{
+                        aspectRatio: "100/100",
+                        objectFit: "cover",
+                    }}
+                    width="100"
+                />
+            </div>
             <MenuDropdown handleToggleMenu={handleToggleMenu} />
 
             <NavigationMenu className={`lg:flex hidden`}>

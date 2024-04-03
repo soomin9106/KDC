@@ -1,6 +1,8 @@
+
+
 const Welcome = () => {
     return (
-        <div className="w-full flex flex-col justify-center items-center space-y-10 h-screen py-16 px-[16px]">
+        <div className="w-full flex flex-col space-y-10 h-screen py-16 px-[16px]">
             <div className="space-y-5">
                 <h2 className="text-3xl font-bold">Welcome</h2>
                 <div className="flex flex-col space-y-2">

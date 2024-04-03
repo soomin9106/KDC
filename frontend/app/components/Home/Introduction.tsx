@@ -8,7 +8,7 @@ const Introduction = () => {
                 <div className="grid grid-cols-2 gap-8">
                     <div>
                         <h2 className="text-6xl font-bold">Korea Dance Talent Vietnam 2024</h2>
-                        <p className="mt-4 text-lg">Global Regionals - 2024 JUNE 15(Sat) & 16(Sun) </p>
+                        <p className="mt-4 text-lg">Global Regionals - 2024 Coming soon </p>
                         <Button className="mt-4 bg-black text-white">Competition</Button>
                     </div>
                     <div>
