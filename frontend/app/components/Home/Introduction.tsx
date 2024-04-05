@@ -5,13 +5,13 @@ const Introduction = () => {
     return (
         <div className="w-full h-screen bg-white text-black">
             <div className="container mx-auto px-16 py-8">
-                <div className="grid grid-cols-2 gap-8">
-                    <div>
-                        <h2 className="text-6xl font-bold">Korea Dance Talent Vietnam 2024</h2>
+                <div className="flex flex-col space-y-10 sm:flex-row sm:space-y-0 sm:justify-between">
+                    <div className="sm:w-[60%]">
+                        <h2 className="text-6xl font-bold">Korea Dance Talent <br />  Vietnam 2024</h2>
                         <p className="mt-4 text-lg">Global Regionals - 2024 Coming soon </p>
                         <Button className="mt-4 bg-black text-white">Competition</Button>
                     </div>
-                    <div>
+                    <div className="sm:w-[40%]">
                         <div className="text-3xl font-semibold">Global Regionals</div>
                         <div className="flex flex-row space-x-10">
                             <ul className="mt-4 space-y-2">

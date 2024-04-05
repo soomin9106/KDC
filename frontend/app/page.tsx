@@ -8,7 +8,7 @@ import Introduction from "./components/Home/Introduction";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full h-screen py-32 space-y-20 overflow-y-scroll">
+    <div className="flex flex-col w-full h-screen py-32 space-y-40 sm:space-y-20 overflow-y-scroll w-full">
       <Introduction />
       <Schedule />
       <Venue />
