@@ -6,7 +6,7 @@ import { GraduationCap, School, Users, FileText, Mail, UploadCloud, CalendarChec
 
 export function ScheduleSection() {
     return (
-      <section id="schedule" className="w-full py-20 px-8 bg-gray-50 text-gray-800">
+      <section id="schedule" className="w-full py-20 px-8 bg-white text-gray-800">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Event Schedule</h2>
           <Tabs defaultValue="day1" className="w-full">

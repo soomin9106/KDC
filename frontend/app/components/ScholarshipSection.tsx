@@ -3,7 +3,7 @@ import Image from "next/image";
 // ScholarshipSection.tsx
 export function ScholarshipSection() {
   return (
-    <section className="w-full py-20 px-8 bg-gray-50 text-gray-800">
+    <section className="w-full py-20 px-8 bg-white text-gray-800">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-10">Scholarship Opportunities</h2>
         <p className="text-lg mb-6">

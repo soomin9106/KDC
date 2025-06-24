@@ -4,7 +4,7 @@ import { Mail, Phone, Instagram, Youtube, Music2, Facebook } from "lucide-react"
 
 export function ContactSection() {
     return (
-      <section id="contact" className="w-full py-20 px-8 bg-gray-50 text-gray-800">
+      <section id="contact" className="w-full py-20 px-8 bg-white text-gray-800">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-10">Get in Touch</h2>
   
