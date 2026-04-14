@@ -1,76 +1,90 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { GraduationCap, School, Users } from "lucide-react";
+
+const categories = [
+  {
+    id: "korean",
+    day: "Day 1 — May 22",
+    title: "Korean Traditional",
+    description:
+      "Celebrate the beauty of Korean traditional dance including Buchaechum, Salpuri, and other classical forms.",
+    divisions: ["Elementary Division", "Middle School Division", "High School & University Division"],
+    accent: true,
+  },
+  {
+    id: "indonesian",
+    day: "Day 1 — May 22",
+    title: "Indonesian Traditional",
+    description:
+      "A tribute to Indonesia's rich cultural heritage through traditional dance forms from across the archipelago.",
+    divisions: ["Elementary Division", "Middle School Division", "High School & University Division"],
+    accent: false,
+  },
+  {
+    id: "kpop",
+    day: "Day 2 — May 23",
+    title: "K-POP Dance",
+    description:
+      "High-energy performances inspired by Korean popular music culture, showcasing modern choreography and stage presence.",
+    divisions: ["Elementary & Middle School Division", "High School & University Division"],
+    accent: false,
+  },
+  {
+    id: "ballet",
+    day: "Day 2 — May 23",
+    title: "Ballet",
+    description:
+      "Classical and contemporary ballet performances evaluated on technique, artistry, and musicality.",
+    divisions: ["Elementary Division", "Middle School Division", "High School & University Division"],
+    accent: false,
+  },
+];
 
 export function CategorySection() {
-    return (
-      <section id="event" className="w-full py-16 px-6 bg-white text-gray-800">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-10">Event Categories & Schedule</h2>
-          <Tabs defaultValue="kpop" className="w-full">
-            <TabsList className="flex justify-center space-x-2 mb-6">
-              <TabsTrigger value="kpop" className="px-4 py-2 text-lg">Day 1: K-pop Dance</TabsTrigger>
-              <TabsTrigger value="ballet" className="px-4 py-2 text-lg">Day 2: Ballet</TabsTrigger>
-            </TabsList>
-            <TabsContent value="kpop">
-              <div className="bg-white p-6 rounded-lg shadow-md space-y-6">
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3 text-lg">
-                    <School className="w-5 h-5 text-pink-500" />
-                    <span>Elementary & Middle School Division</span>
-                  </div>
-                  <div className="flex items-center space-x-3 text-lg">
-                    <GraduationCap className="w-5 h-5 text-pink-500" />
-                    <span>High School & University Division</span>
-                  </div>
-                </div>
-                <div className="mt-6">
-                  <h3 className="text-xl font-semibold mb-4">Program Schedule</h3>
-                  <ul className="space-y-2 text-base">
-                    <li>08:00 - 09:00 : Stage Check and Rehearsal</li>
-                    <li>09:00 - 09:30 : Opening Remarks and Judges Introduction</li>
-                    <li>09:30 - 13:00 : Dance Competition (Elementary & Middle School Division)</li>
-                    <li>13:00 - 14:00 : Lunch Break</li>
-                    <li>14:00 - 17:30 : Dance Competition (High School & University Division)</li>
-                    <li>17:30 - 18:00 : Judging Time</li>
-                    <li>18:00 - 19:00 : Awards Ceremony and Group Photo</li>
-                  </ul>
-                </div>
-              </div>
-            </TabsContent>
-            <TabsContent value="ballet">
-              <div className="bg-white p-6 rounded-lg shadow-md space-y-6">
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3 text-lg">
-                    <School className="w-5 h-5 text-pink-500" />
-                    <span>Elementary Division</span>
-                  </div>
-                  <div className="flex items-center space-x-3 text-lg">
-                    <Users className="w-5 h-5 text-pink-500" />
-                    <span>Middle School Division</span>
-                  </div>
-                  <div className="flex items-center space-x-3 text-lg">
-                    <GraduationCap className="w-5 h-5 text-pink-500" />
-                    <span>High School & University Division</span>
-                  </div>
-                </div>
-                <div className="mt-6">
-                  <h3 className="text-xl font-semibold mb-4">Program Schedule</h3>
-                  <ul className="space-y-2 text-base">
-                    <li>08:00 - 09:00 : Stage Check and Rehearsal</li>
-                    <li>09:00 - 09:30 : Opening Remarks and Judges Introduction</li>
-                    <li>09:30 - 11:30 : Ballet Competition (Elementary Division)</li>
-                    <li>11:30 - 13:00 : Ballet Competition (Middle School Division)</li>
-                    <li>13:00 - 14:00 : Lunch Break</li>
-                    <li>14:00 - 16:30 : Ballet Competition (High School & University Division)</li>
-                    <li>16:30 - 17:00 : Judging Time</li>
-                    <li>17:00 - 18:00 : Awards Ceremony and Group Photo</li>
-                  </ul>
-                </div>
-              </div>
-            </TabsContent>
-          </Tabs>
+  return (
+    <section id="event" className="w-full py-32 px-6 bg-[#111111] text-white">
+      <div className="max-w-6xl mx-auto">
+        {/* Section header */}
+        <div className="text-center mb-20">
+          <p className="text-[#c9a96e] text-xs tracking-[0.4em] uppercase font-light mb-4">
+            Competition
+          </p>
+          <h2 className="text-3xl md:text-4xl font-light tracking-widest uppercase text-white mb-6">
+            Categories
+          </h2>
+          <div className="w-16 h-px bg-[#c9a96e] mx-auto mb-6" />
+          <p className="text-white/50 text-sm tracking-widest uppercase font-light">
+            2026 May 22–23 · Universitas Pendidikan Indonesia, Gymnasium Hall
+          </p>
         </div>
-      </section>
-    );
-  }
-  
+
+        {/* Category grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10">
+          {categories.map((cat) => (
+            <div
+              key={cat.id}
+              className="bg-[#111111] p-10 hover:bg-[#1a1a1a] transition-colors duration-300 group"
+            >
+              <p className="text-[#c9a96e] text-[10px] tracking-[0.35em] uppercase font-light mb-4">
+                {cat.day}
+              </p>
+              <h3 className="text-xl font-light tracking-[0.2em] uppercase text-white mb-4 group-hover:text-[#c9a96e] transition-colors duration-300">
+                {cat.title}
+              </h3>
+              <div className="w-8 h-px bg-[#c9a96e]/40 mb-5" />
+              <p className="text-white/50 text-sm leading-relaxed font-light mb-6">
+                {cat.description}
+              </p>
+              <ul className="space-y-2">
+                {cat.divisions.map((div) => (
+                  <li key={div} className="flex items-center gap-3 text-white/60 text-xs tracking-wider">
+                    <span className="w-1 h-1 rounded-full bg-[#c9a96e] flex-shrink-0" />
+                    {div}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

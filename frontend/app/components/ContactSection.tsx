@@ -1,59 +1,65 @@
-import Image from "next/image";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Mail, Phone, Instagram, Youtube, Music2, Facebook } from "lucide-react";
+import { Mail, Phone, Instagram, Youtube, Facebook } from "lucide-react";
 
 export function ContactSection() {
-    return (
-      <section id="contact" className="w-full py-20 px-8 bg-white text-gray-800">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-10">Get in Touch</h2>
-  
-          {/* <form className="space-y-6 mb-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full border border-gray-300 px-4 py-3 rounded-md"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full border border-gray-300 px-4 py-3 rounded-md"
-              />
+  return (
+    <section id="contact" className="w-full py-32 px-6 bg-[#111111] text-white">
+      <div className="max-w-4xl mx-auto">
+        {/* Section header */}
+        <div className="text-center mb-20">
+          <p className="text-[#c9a96e] text-xs tracking-[0.4em] uppercase font-light mb-4">
+            Inquiries
+          </p>
+          <h2 className="text-3xl md:text-4xl font-light tracking-widest uppercase text-white mb-6">
+            Get in Touch
+          </h2>
+          <div className="w-16 h-px bg-[#c9a96e] mx-auto" />
+        </div>
+
+        {/* Contact details */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mb-16">
+          <div className="bg-[#111111] px-8 py-10 flex flex-col items-center gap-4 hover:bg-[#1a1a1a] transition-colors duration-300">
+            <Mail className="w-5 h-5 text-[#c9a96e]" />
+            <div className="text-center">
+              <p className="text-[#c9a96e] text-[10px] tracking-[0.3em] uppercase font-light mb-2">Email</p>
+              <p className="text-white/70 text-sm font-light">contact@kdt-event.org</p>
             </div>
-            <input
-              type="text"
-              placeholder="Subject"
-              className="w-full border border-gray-300 px-4 py-3 rounded-md"
-            />
-            <textarea
-              rows={5}
-              placeholder="Message"
-              className="w-full border border-gray-300 px-4 py-3 rounded-md"
-            />
-            <button
-              type="submit"
-              className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-md font-semibold"
-            >
-              Send Message
-            </button>
-          </form> */}
-  
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-lg">
-            <div className="flex items-center gap-2">
-              <Mail className="w-5 h-5 text-pink-500" /> <span>contact@kdt-event.org</span>
+          </div>
+          <div className="bg-[#111111] px-8 py-10 flex flex-col items-center gap-4 hover:bg-[#1a1a1a] transition-colors duration-300">
+            <Phone className="w-5 h-5 text-[#c9a96e]" />
+            <div className="text-center">
+              <p className="text-[#c9a96e] text-[10px] tracking-[0.3em] uppercase font-light mb-2">Phone</p>
+              <p className="text-white/70 text-sm font-light">+62 812-3456-7890</p>
             </div>
-            <div className="flex items-center gap-2">
-              <Phone className="w-5 h-5 text-pink-500" /> <span>+62 812-3456-7890</span>
+          </div>
+          <div className="bg-[#111111] px-8 py-10 flex flex-col items-center gap-4 hover:bg-[#1a1a1a] transition-colors duration-300">
+            <div className="flex gap-4">
+              <Instagram className="w-5 h-5 text-[#c9a96e]" />
+              <Youtube className="w-5 h-5 text-[#c9a96e]" />
+              <Facebook className="w-5 h-5 text-[#c9a96e]" />
             </div>
-            <div className="flex gap-4 mt-4 md:mt-0">
-              <Instagram className="w-5 h-5 text-pink-500" />
-              <Youtube className="w-5 h-5 text-pink-500" />
-              <Facebook className="w-5 h-5 text-pink-500" />
+            <div className="text-center">
+              <p className="text-[#c9a96e] text-[10px] tracking-[0.3em] uppercase font-light mb-2">Social Media</p>
+              <p className="text-white/70 text-sm font-light">@kdt.official</p>
             </div>
           </div>
         </div>
-      </section>
-    );
-  }
-  
+
+        {/* Register CTA */}
+        <div className="text-center border border-white/10 py-14 px-6">
+          <p className="text-white/50 text-xs tracking-[0.3em] uppercase font-light mb-4">
+            Ready to Join?
+          </p>
+          <h3 className="text-2xl font-light tracking-[0.2em] uppercase text-white mb-8">
+            Register for the Competition
+          </h3>
+          <a
+            href="#register"
+            className="inline-block border border-[#c9a96e] text-[#c9a96e] hover:bg-[#c9a96e] hover:text-black px-12 py-3 text-xs tracking-[0.3em] uppercase font-light transition-all duration-300"
+          >
+            Register Now
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

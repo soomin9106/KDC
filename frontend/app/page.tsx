@@ -1,10 +1,3 @@
-import Image from "next/image";
-import Schedule from "./components/Competition/Schedule";
-import Venue from "./components/Competition/Venue";
-import Overall from "./components/Competition/Overall";
-import Instructors from "./components/Competition/Instructors";
-import Fee from "./components/Competition/Fee";
-import Introduction from "./components/Home/Introduction";
 import HeroSection from "./components/HeroSeciont";
 import AboutSection from "./components/AboutSection";
 import { CategorySection } from "./components/CategorySection";
@@ -17,7 +10,7 @@ import { ContactSection } from "./components/ContactSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full h-screen py-32 space-y-40 sm:space-y-20 overflow-y-scroll w-full">
+    <main className="flex flex-col w-full bg-[#0a0a0a]">
       <HeroSection />
       <AboutSection />
       <CategorySection />
@@ -27,6 +20,6 @@ export default function Home() {
       <ScholarshipSection />
       <GuidelinesSection />
       <ContactSection />
-    </div>
+    </main>
   );
 }
