@@ -9,19 +9,13 @@ const navLinks = [
   { href: "/#event", label: "CATEGORIES" },
   { href: "/#register", label: "REGISTER" },
   { href: "/#schedule", label: "SCHEDULE" },
-  { href: "/#judge", label: "JUDGES" },
   { href: "/#scholarship", label: "SCHOLARSHIP" },
   { href: "/#guideline", label: "GUIDELINES" },
   { href: "/#contact", label: "CONTACT" },
 ];
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  const handleToggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +60,7 @@ const Header = () => {
 
         {/* Mobile menu */}
         <div className="lg:hidden">
-          <MenuDropdown handleToggleMenu={handleToggleMenu} />
+          <MenuDropdown handleToggleMenu={() => {}} />
         </div>
       </div>
     </header>

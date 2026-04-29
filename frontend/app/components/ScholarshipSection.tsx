@@ -37,25 +37,32 @@ export function ScholarshipSection() {
             Scholarship & Benefits
           </h2>
           <div className="w-16 h-px bg-[#c9a96e] mx-auto mb-6" />
-          <p className="text-white/50 text-sm font-light tracking-wider">
-            Top winners will be invited to Korea for world-class training opportunities
+          {/* Total prize highlight */}
+          <div className="inline-block border border-[#c9a96e]/40 px-8 py-4 mt-2">
+            <p className="text-[#c9a96e] text-xs tracking-[0.3em] uppercase font-light mb-1">Total Prize</p>
+            <p className="text-white text-xl font-light tracking-wider">IDR 5,000,000++ + Korea Classes</p>
+          </div>
+        </div>
+
+        {/* Top winners → Korea */}
+        <div className="bg-[#c9a96e]/5 border border-[#c9a96e]/20 px-8 py-6 mb-12 text-center">
+          <p className="text-[#c9a96e] text-sm tracking-[0.2em] uppercase font-light">
+            🏆 Top Winners Will Be Invited to Korea
           </p>
         </div>
 
         {/* KARTS — main scholarship */}
         <div className="border border-white/10 p-10 mb-12">
-          <div className="flex items-start gap-4 mb-8">
-            <div>
-              <p className="text-[#c9a96e] text-[10px] tracking-[0.4em] uppercase font-light mb-2">
-                Featured Scholarship
-              </p>
-              <h3 className="text-xl font-light tracking-[0.15em] uppercase text-white mb-1">
-                KARTS School of Dance
-              </h3>
-              <p className="text-white/40 text-xs tracking-widest font-light">
-                Korea National University of Arts · Category: Korean Traditional Dance
-              </p>
-            </div>
+          <div className="mb-8">
+            <p className="text-[#c9a96e] text-[10px] tracking-[0.4em] uppercase font-light mb-2">
+              Featured Scholarship
+            </p>
+            <h3 className="text-xl font-light tracking-[0.15em] uppercase text-white mb-1">
+              KARTS School of Dance
+            </h3>
+            <p className="text-white/40 text-xs tracking-widest font-light">
+              Korea National University of Arts · Category: Korean Traditional Dance
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10">

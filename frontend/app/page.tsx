@@ -3,7 +3,6 @@ import AboutSection from "./components/AboutSection";
 import { CategorySection } from "./components/CategorySection";
 import { RegisterSection } from "./components/RegisterSection";
 import { ScheduleSection } from "./components/ScheduleSection";
-import { JudgesSection } from "./components/JudgeSection";
 import { ScholarshipSection } from "./components/ScholarshipSection";
 import { GuidelinesSection } from "./components/GuidelinesSection";
 import { ContactSection } from "./components/ContactSection";
@@ -16,7 +15,6 @@ export default function Home() {
       <CategorySection />
       <RegisterSection />
       <ScheduleSection />
-      <JudgesSection />
       <ScholarshipSection />
       <GuidelinesSection />
       <ContactSection />
