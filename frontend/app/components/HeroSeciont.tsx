@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Full-bleed poster image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/001.jpeg"
+          src="/001_new.jpeg"
           alt="The 1st KDT Invitational Dance Competition"
           fill
           className="object-cover object-center"
